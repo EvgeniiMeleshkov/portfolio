@@ -1,0 +1,16 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #65a52a;
+}
+.mainContainer {
+    justify-content: space-between;
+}
+.greetings {
+    width: 300px;
+    background-color: rgba(115,131,102,0.76);
+}
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+}
