@@ -14,7 +14,7 @@ const Footer = () => {
                         <div className={s.someBlock}></div>
                         <div className={s.someBlock}></div>
                     </div>
-                    <p className={s.footerInfo}>all rights protected</p>
+                    <p className={s.footerInfo}>©2022 all rights protected</p>
 
             </div>
         </div>

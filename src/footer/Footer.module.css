@@ -1,5 +1,5 @@
 .footerMainBlock {
-    height: 50vh;
+    min-height: 50vh;
     background-color: black;
 }
 .footerInnerBlock {
