@@ -5,6 +5,7 @@
 .skillsContainer {
     justify-content: flex-start;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 .title {
     background-color: rgba(106,131,128,0.76);

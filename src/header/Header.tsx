@@ -5,7 +5,6 @@ import Navigation from '../nav/Navigation';
 const Header = () => {
     return (
         <div className={s.header}>
-            header
             <Navigation/>
         </div>
     );

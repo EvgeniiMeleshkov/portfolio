@@ -1,0 +1,25 @@
+.contactsMainBlock {
+    height: 100vh;
+    background-color: cornsilk;
+}
+.contactsInnerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactsForm {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.input {
+    height: 50px;
+}
+.textArea {
+    height: 250px;
+}
+
