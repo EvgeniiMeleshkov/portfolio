@@ -4,6 +4,7 @@
 }
 .mainContainer {
     justify-content: space-between;
+    margin: auto;
 }
 .greetings {
     width: 300px;
