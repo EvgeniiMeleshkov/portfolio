@@ -8,9 +8,8 @@
     text-align: start;
     margin: auto;
 }
-.icon {
-    width: 60px;
-    height: 60px;
+.picture {
+    width: 100%;
     background-color: rgba(26,32,28,0.76);
 }
 .title {
@@ -18,4 +17,5 @@
 }
 .description {
     width: 100%;
+    padding: 20px;
 }
