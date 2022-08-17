@@ -5,7 +5,7 @@
 .contactsInnerBlock {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .contactsForm {
@@ -20,7 +20,7 @@
     height: 50px;
 }
 .textArea {
-    height: 250px;
+    height: 200px;
     resize: none;
 }
 
