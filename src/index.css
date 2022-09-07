@@ -17,6 +17,28 @@ body {
     overflow-x: hidden;
     background-color: #1f1f20;
 }
+
+p {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-weight: 300;
+}
+h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+h3 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 500;
+}
 h2 {
     margin: 0;
     font-size: 36px;
