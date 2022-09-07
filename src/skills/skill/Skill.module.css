@@ -1,6 +1,5 @@
 .skill {
     width: 250px;
-    background-color: rgba(64,76,131,0.76);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,7 +9,6 @@
 }
 .picture {
     width: 100%;
-    background-color: rgba(26,32,28,0.76);
 }
 .title {
 

@@ -1,6 +1,28 @@
 .nav {
-    border: 1px solid brown;
     display: flex;
-    width: 300px;
+    min-width: 400px;
     justify-content: space-between;
+    margin: 10px;
+}
+li {
+    display: flex;
+    flex-direction: column;
+}
+.navElement {
+    text-decoration: none;
+    color: inherit;
+}
+.navElementActive {
+    font-size: 27px;
+    font-weight: bolder;
+    color: mintcream;
+    text-decoration: none;
+}
+@media screen and (max-width: 450px){
+    .nav {
+        width: 300px;
+        min-width: auto;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
 }

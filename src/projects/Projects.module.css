@@ -1,18 +1,21 @@
 .projectsBlock {
     min-height: 100vh;
-    background-color: rgba(115,131,102,0.76);
+    display: flex;
+    align-items: center;
 }
 .projectsContainer {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: rgba(81,15,138,0.52);
 }
-.label h2 {
-
-}
+/*.label h2 {*/
+/*    margin: 0;*/
+/*    font-size: 36px;*/
+/*    letter-spacing: 5px;*/
+/*    line-height: 1.2;*/
+/*    font-weight: 300;*/
+/*}*/
 .projects {
-    border: 1px solid mintcream;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

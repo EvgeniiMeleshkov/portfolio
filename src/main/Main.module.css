@@ -1,17 +1,39 @@
 .mainBlock {
+    display: flex;
+    align-items: center;
     min-height: 100vh;
-    background-color: #65a52a;
 }
 .mainContainer {
     justify-content: space-between;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
+
 .greetings {
-    width: 300px;
-    background-color: rgba(115,131,102,0.76);
+    max-width: 300px;
+    min-width: 100px;
 }
 .photo {
-    width: 300px;
-    height: 400px;
-    background-color: antiquewhite;
+    max-width: 300px;
+    max-height: 400px;
+    min-width: 100px;
+    min-height: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-area {
+        height: 480px;
+    }
+
+    .slider-area {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+        display: block;
+    }
 }

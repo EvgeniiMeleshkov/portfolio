@@ -6,16 +6,19 @@ import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contacts from './contacts/Contacts';
 import Footer from './footer/Footer';
+import {Route, Routes} from 'react-router-dom';
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
-            <Footer/>
+                <Header/>
+            <Routes>
+                <Route path={'/*'} element={<Main/>} />
+                <Route path={'/skills'} element={<Skills/>} />
+                <Route path={'/projects'} element={<Projects/>} />
+                <Route path={'/contacts'} element={<Contacts/>} />
+            </Routes>
+                <Footer/>
         </div>
     );
 }
