@@ -12,7 +12,10 @@ const Main = () => {
                     <h1>I`m Evgenii Meleshkov</h1>
                     <p>Frontend developer</p>
                 </div>
-                <img alt={'My photo'} src={myPhoto} className={s.photo}/>
+                    <div className={s.photoFrame}>
+
+                        <img alt='MyPhoto' src={myPhoto} className={s.photo} />
+                    </div>
             </div>
         </div>
     );
