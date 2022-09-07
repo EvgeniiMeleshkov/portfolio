@@ -26,9 +26,18 @@
     flex-wrap: wrap;
 }
 .someBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 500px;
+    background-color: mintcream;
+    margin: 10px;
+}
+.someBlock img {
+    width: 56px;
 }
 .pol {
     z-index: 500;
