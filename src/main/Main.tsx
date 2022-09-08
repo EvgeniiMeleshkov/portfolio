@@ -7,6 +7,9 @@ const Main = () => {
     return (
         <div className={s.mainBlock}>
             <div className={`${sContainer.container} ${s.mainContainer}`}>
+                <div className={s.photoFrame}>
+                    <img alt="MyPhoto" src={myPhoto} className={s.photo}/>
+                </div>
                 <div className={s.greetings}>
                     <p>Hi There</p>
                     <h1>I`m Evgenii Meleshkov</h1>
@@ -15,10 +18,6 @@ const Main = () => {
                         About me...
                     </h2>
                     <p>a;odpoaj sdpja poja podjvnpijr pihrt vpiha piha cpiahr vpihjs parihv aspih vars vapiha vpihar pivh asrpivh apishrv </p>
-                </div>
-
-                <div className={s.photoFrame}>
-                    <img alt="MyPhoto" src={myPhoto} className={s.photo}/>
                 </div>
             </div>
 
