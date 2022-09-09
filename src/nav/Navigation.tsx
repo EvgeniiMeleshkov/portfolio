@@ -7,7 +7,7 @@ const Navigation = () => {
     return (
         <div >
             <ul className={s.nav}>
-                <li><NavLink className={styleForLink} to={'/main'} >Main</NavLink></li>
+                <li><NavLink className={styleForLink} to={'/'} >Main</NavLink></li>
                 <li><NavLink className={styleForLink} to={'/skills'} >Skills</NavLink></li>
                 <li><NavLink className={styleForLink} to={'/projects'} >Projects</NavLink></li>
                 <li><NavLink className={styleForLink} to={'/contacts'} >Contacts</NavLink></li>

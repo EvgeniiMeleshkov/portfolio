@@ -17,7 +17,9 @@ const Main = () => {
                     <h2>
                         About me...
                     </h2>
-                    <p>a;odpoaj sdpja poja podjvnpijr pihrt vpiha piha cpiahr vpihjs parihv aspih vars vapiha vpihar pivh asrpivh apishrv </p>
+                    <p>a;odpoaj sdpja poja podjvnpijr pihrt
+                        vpiha piha cpiahr vpihjs parihv aspih
+                        vars vapiha vpihar pivh asrpivh apishrv </p>
                 </div>
             </div>
 
