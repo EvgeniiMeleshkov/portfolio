@@ -33,14 +33,14 @@ h1 {
     font-weight: 700;
 }
 h3 {
-    margin: 0;
     font-size: 26px;
     letter-spacing: 2px;
     line-height: 1.2;
     font-weight: 500;
+    margin-top: 30px;
 }
 h2 {
-    margin: 0;
+    margin-bottom: 20px;
     font-size: 36px;
     letter-spacing: 5px;
     line-height: 1.2;

@@ -29,9 +29,9 @@
     -webkit-animation: morph 8s ease-in-out 1s infinite;
     animation: morph 8s ease-in-out 1s infinite;
     background-blend-mode: multiply;
-    box-shadow: 0 0 0 9px hsl(0, 0%, 83%);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     overflow: hidden;
+    box-shadow: #d3d3d3 0 4px 18px , rgb(255 255 255 / 30%) 0 1px 0 inset;
 }
 @keyframes morph {
     0% {
