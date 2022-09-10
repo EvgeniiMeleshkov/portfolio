@@ -1,3 +1,4 @@
+import reactRedux from '../../assets/icones/pngaaa.com-2507964.png'
 export const skills = [
     {
         name: 'JS',
@@ -27,7 +28,12 @@ export const skills = [
     {
         name: 'Redux',
         descripton: 'State management library',
-        picture: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png'
+        picture: 'https://www.svgrepo.com/show/303557/redux-logo.svg'
+    },
+    {
+        name: 'React-Redux',
+        descripton: 'Redux wrap commands',
+        picture: reactRedux
     },
     {
         name: 'Formik',
