@@ -22,14 +22,20 @@
 .picture img{
     width: 100%;
 }
+.skillTextContainer{
+    position: relative;
+}
 .skillTitle {
+    position: absolute;
+    margin-bottom: 40px;
     letter-spacing: 1px;
     font-weight: 200;
 
 }
 .description {
-    width: 100%;
-    padding-top: 20px;
+    margin-top: 48px;
+    width: 150px;
+    padding-top: 7px;
     font-weight: 300;
     font-size: medium;
     background-color: rgba(236, 217, 207, 0.18);
