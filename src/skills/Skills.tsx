@@ -9,7 +9,10 @@ const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Skills</h2>
+                <div className={s.title}>
+                    <h2 >Skills</h2>
+                </div>
+
                 <div className={s.skills}>
                     {skills.map(el => <Skill key={el.name} title={el.name} description={el.description} picture={el.picture}/>)}
                 </div>

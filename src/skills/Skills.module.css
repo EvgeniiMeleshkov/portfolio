@@ -11,6 +11,16 @@
 
 }
 .title {
+    position: relative;
+    text-align: end;
+}
+.title::after {
+    position: absolute;
+    content: '';
+    background: #f0dc51;
+    width: 20px;
+    height: 1px;
+    bottom: 30px;
 }
 .skills {
     width: 100%;
