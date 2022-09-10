@@ -11,7 +11,7 @@ const Skills = () => {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <h2 className={s.title}>Skills</h2>
                 <div className={s.skills}>
-                    {skills.map(el => <Skill key={el.name} title={el.name} description={el.descripton} picture={el.picture}/>)}
+                    {skills.map(el => <Skill key={el.name} title={el.name} description={el.description} picture={el.picture}/>)}
                 </div>
             </div>
         </div>
