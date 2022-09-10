@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eb170e7b.css",
-    "main.js": "/portfolio/static/js/main.0f967647.js",
+    "main.css": "/portfolio/static/css/main.2350785a.css",
+    "main.js": "/portfolio/static/js/main.f8d80df5.js",
     "static/js/787.e8871c4f.chunk.js": "/portfolio/static/js/787.e8871c4f.chunk.js",
     "static/media/748566.jpg": "/portfolio/static/media/748566.6c7b9af632a301ea3dfd.jpg",
     "static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg": "/portfolio/static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.5d1be4c3bbe54f8cda7e.jpeg",
+    "static/media/pngaaa.com-2507964.png": "/portfolio/static/media/pngaaa.com-2507964.e489a95718f0991b2c4a.png",
     "static/media/pngaaa.com-1100822.png": "/portfolio/static/media/pngaaa.com-1100822.c76697ae58e9439a37d8.png",
     "index.html": "/portfolio/index.html",
-    "main.eb170e7b.css.map": "/portfolio/static/css/main.eb170e7b.css.map",
-    "main.0f967647.js.map": "/portfolio/static/js/main.0f967647.js.map",
+    "main.2350785a.css.map": "/portfolio/static/css/main.2350785a.css.map",
+    "main.f8d80df5.js.map": "/portfolio/static/js/main.f8d80df5.js.map",
     "787.e8871c4f.chunk.js.map": "/portfolio/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb170e7b.css",
-    "static/js/main.0f967647.js"
+    "static/css/main.2350785a.css",
+    "static/js/main.f8d80df5.js"
   ]
 }
