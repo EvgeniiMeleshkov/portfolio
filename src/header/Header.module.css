@@ -6,6 +6,5 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.69);
-    opacity: 90%;
+    opacity: 95%;
 }
