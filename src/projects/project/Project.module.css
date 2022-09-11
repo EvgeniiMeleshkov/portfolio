@@ -6,15 +6,59 @@
     box-shadow: 0 0px 5px #d3d3d330, inset 0 0px 0 hsl(0deg 0% 100% / 30%);
 }
 .projectBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    text-align: center;
+    position: relative;
     margin: 0 auto;
     height: 30vw;
     width: 70vw;
     background: round;
 }
 
-.projectImage {
-    width: 100%;
+
+.projectBlock::before {
+    position: absolute;
+    content: '';
+    background-color: #1f1f20;
+    opacity: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+.projectBlock:hover {
+    filter: grayscale(1%);
+}
+.projectBlock:hover::before {
+    opacity: 60%;
+}
+.viewRef{
+    position: relative;
+    z-index: 1;
+    font-size: 50px;
+    margin: 0 auto;
+    opacity: 0;
+}
+.viewRef:hover {
+    animation: my-animation 1000ms normal forwards;
+}
+
+
+@keyframes my-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
 .infoBlock{
     width: 70vw;
 }

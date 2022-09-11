@@ -11,9 +11,7 @@ const Project = ({projectImage, description, name}: PropsType) => {
     return (
         <div className={s.mainProjectBlock}>
             <div style={{...projectImage}} className={s.projectBlock}>
-                <div className={s.projectImage}>
-
-                </div>
+                    <label className={s.viewRef}>{name}</label>
             </div>
             <div className={s.infoBlock}>
                 <h3 className={s.projectName}>{name}</h3>
