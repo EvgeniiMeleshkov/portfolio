@@ -4,7 +4,7 @@ import sContainer from '../common/styles/container/Container.module.css'
 import myPhoto from '../assets/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg'
 
 const Main = () => {
-    const text = ['Frontend developer ', 'React developer ', 'JavaScript developer ', 'ex iOS developer ', '']
+    const text = ['Frontend developer', 'React developer', 'JavaScript developer', 'ex iOS developer']
     const [val, setVal] = useState('')
     let [i, setI] = useState(1)
     let [j, setJ] = useState(0)
@@ -12,27 +12,7 @@ const Main = () => {
     useEffect(() => {
 
         const index = setInterval(() => {
-
-            // for (let k = 0; k < text.length; k++) {
-            //     let el = text[k]
-            //
-            //     for (let l = 0; l < el.length; l++) {
-            //         const value = el.slice(0, l)
-            //         setVal(value)
-            //         setI(l)
-            //         if(l > el.length) return
-            //         if(l === el.length) {
-            //             setI(0)
-            //             setJ(j++)
-            //         }
-            //     }
-            //     if(k > text.length) {
-            //         setJ(0)
-            //     }
-            // }
-
-
-            const a = text[j].slice(0, i)
+            const a = text[j].slice(0, i + 1)
             setVal(a)
             setI(i++)
             if (i > text[j].length) {
@@ -41,18 +21,17 @@ const Main = () => {
             if (i === text[j].length) {
                 setI(0)
                 setJ(++j)
+                console.log(j)
+                if (text.length === j ) {
+                    setJ(0)
+                    setI(1)
+                }
             }
-            if (j >= text.length - 1) {
-                setJ(0)
-            }
-
-
         }, 100);
-
         return () => {
             clearInterval(index)
         }
-    })
+    },)
     return (
         <div className={s.mainBlock}>
             <div className={`${sContainer.container} ${s.mainContainer}`}>
