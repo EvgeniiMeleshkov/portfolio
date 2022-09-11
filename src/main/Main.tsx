@@ -27,7 +27,7 @@ const Main = () => {
                     setI(1)
                 }
             }
-        }, 100);
+        }, Math.random()*300);
         return () => {
             clearInterval(index)
         }
