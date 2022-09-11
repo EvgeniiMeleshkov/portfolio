@@ -10,35 +10,7 @@
     flex-wrap: nowrap;
 
 }
-.title {
-    position: relative;
-    text-align: end;
-}
-.title::after {
-    position: absolute;
-    content: '';
-    background: #f0dc51;
-    width: 20px;
-    height: 1px;
-    bottom: 30px;
 
-}
-.title::after {
-    animation: my-animation 1000ms linear infinite;
-}
-
-
-@keyframes my-animation {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 .skills {
     width: 100%;
     display: flex;

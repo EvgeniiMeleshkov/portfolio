@@ -1,13 +1,24 @@
 import React from 'react';
 import s from './Project.module.css'
-import projectImg from '../../assets/748566.jpg'
 
-const Project = () => {
+type PropsType = {
+    projectImage: { backgroundImage: string }
+    name: string
+    description: string
+}
+
+const Project = ({projectImage, description, name}: PropsType) => {
     return (
-        <div className={s.projectBlock}>
-            <img className={s.projectImage} src={projectImg} alt={'project img'}/>
-            <h4 className={s.projectName}>name</h4>
-            <p className={s.projectDescription}>description</p>
+        <div className={s.mainProjectBlock}>
+            <div style={{...projectImage}} className={s.projectBlock}>
+                <div className={s.projectImage}>
+
+                </div>
+            </div>
+            <div className={s.infoBlock}>
+                <h3 className={s.projectName}>{name}</h3>
+                <p className={s.projectDescription}>{description}</p>
+            </div>
         </div>
     );
 };

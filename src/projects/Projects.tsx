@@ -2,20 +2,16 @@ import React from 'react';
 import s from './Projects.module.css'
 import styleContainer from '../common/styles/container/Container.module.css'
 import Project from './project/Project';
+import {Title} from '../common/title/Title';
+import {projects} from '../common/projects/projects'
 
 const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                <div className={s.label}>
-                    <h2>My Projects</h2>
-                </div>
+                <Title title={'My Projects'}/>
                 <div className={s.projects}>
-                    <Project/>
-                    <Project/>
-                    <Project/>
-                    <Project/>
-                    <Project/>
+                    {projects.map(el => <Project key={el.name} name={el.name} description={el.description} projectImage={el.background}/>)}
                 </div>
             </div>
         </div>
