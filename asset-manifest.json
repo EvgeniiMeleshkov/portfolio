@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a74e2b97.css",
-    "main.js": "/portfolio/static/js/main.fc899a3f.js",
+    "main.css": "/portfolio/static/css/main.f193d828.css",
+    "main.js": "/portfolio/static/js/main.7dd652b1.js",
     "static/js/787.e8871c4f.chunk.js": "/portfolio/static/js/787.e8871c4f.chunk.js",
     "static/media/samuraiSoc.png": "/portfolio/static/media/samuraiSoc.2bb4b6658dcb6e24d3f5.png",
     "static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg": "/portfolio/static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.5d1be4c3bbe54f8cda7e.jpeg",
@@ -13,14 +13,13 @@
     "static/media/pnghut_logo-axios-font-brand-javascript-neyo-stephen-hawking-artificial-intelligence.png": "/portfolio/static/media/pnghut_logo-axios-font-brand-javascript-neyo-stephen-hawking-artificial-intelligence.d8e46695d0bb65922033.png",
     "static/media/pngaaa.com-2507964.png": "/portfolio/static/media/pngaaa.com-2507964.e489a95718f0991b2c4a.png",
     "static/media/HTML.png": "/portfolio/static/media/HTML.33e5583f9042df9e0bf2.png",
-    "static/media/pngaaa.com-1100822.png": "/portfolio/static/media/pngaaa.com-1100822.c76697ae58e9439a37d8.png",
     "index.html": "/portfolio/index.html",
-    "main.a74e2b97.css.map": "/portfolio/static/css/main.a74e2b97.css.map",
-    "main.fc899a3f.js.map": "/portfolio/static/js/main.fc899a3f.js.map",
+    "main.f193d828.css.map": "/portfolio/static/css/main.f193d828.css.map",
+    "main.7dd652b1.js.map": "/portfolio/static/js/main.7dd652b1.js.map",
     "787.e8871c4f.chunk.js.map": "/portfolio/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74e2b97.css",
-    "static/js/main.fc899a3f.js"
+    "static/css/main.f193d828.css",
+    "static/js/main.7dd652b1.js"
   ]
 }
