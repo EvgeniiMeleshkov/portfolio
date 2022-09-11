@@ -23,17 +23,17 @@
     position: absolute;
     content: '';
     background-color: #1f1f20;
-    opacity: 40%;
+    opacity: 20%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
 .projectBlock:hover {
-    filter: grayscale(1%);
+    filter: grayscale(0%);
 }
 .projectBlock:hover::before {
-    opacity: 60%;
+    opacity: 40%;
 }
 .viewRef{
     position: relative;
@@ -55,7 +55,13 @@
         opacity: 1;
     }
 }
-
+@media screen and (max-width: 680px) {
+    .projectBlock {
+        border: 2px solid crimson;
+        width: 90vw;
+        height: 40vw;
+    }
+}
 
 
 

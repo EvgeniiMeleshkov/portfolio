@@ -26,6 +26,7 @@
     width: 100%;
 }
 .skillTextContainer{
+    text-align: start;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -40,6 +41,7 @@
     font-weight: 300;
     font-size: medium;
     align-self: baseline;
+    text-align: start;
 }
 .description p {
 

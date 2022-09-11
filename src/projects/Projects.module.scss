@@ -1,0 +1,18 @@
+.projectsBlock {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .projectsContainer {
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+
+
