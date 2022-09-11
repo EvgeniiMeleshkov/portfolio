@@ -1,5 +1,5 @@
 .skill {
-    width: 250px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,4 +45,20 @@
 }
 .description p {
 
+}
+
+@media screen and (max-width: 935px){
+    .skill {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 715px){
+    .skill {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 605px){
+    .skill {
+        width: 400px;
+    }
 }
