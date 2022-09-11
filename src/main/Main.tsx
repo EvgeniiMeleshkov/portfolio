@@ -2,23 +2,22 @@ import React, {useEffect, useState} from 'react';
 import s from './Main.module.css'
 import sContainer from '../common/styles/container/Container.module.css'
 import myPhoto from '../assets/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg'
-import {Title} from '../common/title/Title';
 
 const Main = () => {
-    const text = 'Frontend developer '
+    const text = ['Frontend developer ', 'React developer ', 'JavaScript developer', 'ex iOS developer']
     const [val, setVal] = useState('')
     let [i, setI] = useState(0)
 
     useEffect(() => {
         const index = setInterval(() => {
-            const a = text.slice(0, i)
+            const a = text[0].slice(0, i)
             setVal(a)
             setI(i++)
-            if (i > text.length) return
-            if (i === text.length) {
+            if (i > text[0].length) return
+            if (i === text[0].length) {
                 setI(0)
             }
-        }, 300);
+        }, 200);
 
         return () => {
             clearInterval(index)

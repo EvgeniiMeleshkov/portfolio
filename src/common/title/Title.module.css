@@ -9,7 +9,6 @@
     width: 20px;
     height: 1px;
     bottom: 30px;
-
 }
 .title::after {
     animation: my-animation 1000ms linear infinite;

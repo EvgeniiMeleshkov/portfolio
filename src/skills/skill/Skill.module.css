@@ -47,17 +47,17 @@
 
 }
 
-@media screen and (max-width: 935px){
+@media screen and (max-width: 1050px){
     .skill {
         width: 300px;
     }
 }
-@media screen and (max-width: 715px){
+@media screen and (max-width: 800px){
     .skill {
         width: 250px;
     }
 }
-@media screen and (max-width: 605px){
+@media screen and (max-width: 675px){
     .skill {
         width: 400px;
     }
