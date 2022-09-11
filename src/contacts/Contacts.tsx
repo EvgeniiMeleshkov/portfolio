@@ -9,11 +9,11 @@ const Contacts = () => {
             <div className={`${styleContainer.container} ${s.contactsInnerBlock}`}>
                 <Title title={'Contacts'}/>
                 <form className={s.contactsForm}>
-                    <input className={s.input}/>
-                    <input className={s.input}/>
+                    <input placeholder={'First name'} className={s.input}/>
+                    <input placeholder={'Last name'} className={s.input}/>
                     <textarea className={s.textArea}/>
                 </form>
-                <button>Submit</button>
+                <button className={s.submitButton}>Submit</button>
             </div>
         </div>
     );
