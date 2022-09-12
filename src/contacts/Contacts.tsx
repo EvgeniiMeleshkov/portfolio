@@ -80,7 +80,7 @@ const Contacts = () => {
                     </div>
 
                     <input {...formik.getFieldProps('user_name')}
-                           name="user_name" placeholder={'First name'} className={s.input}/>
+                           name="user_name" placeholder={'Your name'} className={s.input}/>
 
                     <div className={s.formikErr}>
                         {formik.errors.user_email && formik.touched.user_email &&
