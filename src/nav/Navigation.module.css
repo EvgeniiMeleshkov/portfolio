@@ -12,10 +12,14 @@ li {
     flex-direction: column;
 }
 .navElement {
+    padding: 5px;
     text-decoration: none;
     color: inherit;
+    text-align: center;
 }
 .navElementActive {
+    text-align: center;
+    padding: 5px;
     font-size: 27px;
     font-weight: bolder;
     color: mintcream;
