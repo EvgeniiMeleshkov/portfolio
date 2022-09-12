@@ -1,69 +1,64 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import s from './Contacts.module.css'
 import styleContainer from '../common/styles/container/Container.module.css'
 import {Title} from '../common/title/Title';
 import {useFormik} from 'formik';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 
 type FormikErrorsType = {
-    firstName?: string
-    email?: string
+    user_name?: string
+    user_email?: string
     message?: string
 }
 type FormDataType = {
-    firstName: string
-    lastName: string
-    email: string
+    user_name: string
+    user_email: string
     message: string
 }
 
 const Contacts = () => {
 
-
-    function sendEmail(e: any) {
-       e.preventDefault()
-        emailjs.sendForm('service_5zouc17', 'template_lwu9u6d', e.target, 'Fcy7fgHITPL0M0wnk')
+    const form = useRef<any>();
+    const sendEmail = (e: FormDataType) => {
+        emailjs.sendForm('service_5zouc17', 'template_0jjfus1', form.current, 'Fcy7fgHITPL0M0wnk')
             .then((result) => {
-                console.log(result.text)
-                console.log(e)
 
-                //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
             }, (error) => {
-                console.log(error.text);
+                alert(error.text);
             });
-
-    }
+    };
 
 
     const formik = useFormik({
         initialValues: {
-            firstName: '',
-            lastName: '',
-            email: '',
+            user_name: '',
+            user_email: '',
             message: ''
         },
         validate: (values) => {
             const errors: FormikErrorsType = {}
-            if (!values.email) {
-                errors.email = 'Required'
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-                errors.email = 'Invalid email address'
+            if (!values.user_email) {
+                errors.user_email = 'Required'
+            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.user_email.trim())) {
+                errors.user_email = 'Invalid email address'
             }
             if (!values.message) {
                 errors.message = 'Required'
             } else if (values.message.length < 2) {
                 errors.message = 'Message should be longer then two symbols'
             }
-            if (!values.firstName) {
-                errors.firstName = 'Required'
-            } else if (values.firstName.length < 2) {
-                errors.firstName = 'Enter valid name'
+            if (!values.user_name) {
+                errors.user_name = 'Required'
+            } else if (values.user_name.length < 2) {
+                errors.user_name = 'Enter valid name'
             }
             return errors
         },
         onSubmit: values => {
-
+            values.message && values.user_email && values.user_name &&
+            sendEmail({user_name: values.user_name.trim(), user_email: values.user_email.trim(), message: values.message})
+            formik.resetForm()
         },
     });
 
@@ -71,24 +66,37 @@ const Contacts = () => {
         <div className={s.contactsMainBlock}>
             <div className={`${styleContainer.container} ${s.contactsInnerBlock}`}>
                 <Title title={'Contacts'}/>
-                <form onSubmit={sendEmail} style={{}} className={s.contactsForm}>
-                    {formik.errors.firstName && formik.touched.firstName &&
-                        <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.firstName}</div>}
-                    <input {...formik.getFieldProps('firstName')}
-                           name={'firstName'} placeholder={'First name'} className={s.input}/>
-                    <input{...formik.getFieldProps('lastName')}
-                          name={'lastName'} placeholder={'Last name'} className={s.input}/>
-                    {formik.errors.email && formik.touched.email &&
-                        <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.email}</div>}
-                    <input{...formik.getFieldProps('email')}
-                          name={'email'} placeholder={'Your email'} className={s.input}/>
-                    {formik.errors.message && formik.touched.message &&
-                        <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.message}</div>}
-                    <textarea{...formik.getFieldProps('message')}
-                             name={'message'} className={s.textArea}/>
-                    <button type={'submit'} className={s.submitButton}>Submit</button>
-                </form>
+                <form ref={form} onSubmit={formik.handleSubmit} style={{}} className={s.contactsForm}>
 
+                    <div className={s.formikErr}>
+                        {formik.errors.user_name && formik.touched.user_name &&
+                            <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.user_name}</div>}
+                    </div>
+
+                    <input {...formik.getFieldProps('user_name')}
+                           name="user_name" placeholder={'First name'} className={s.input}/>
+
+                    <div className={s.formikErr}>
+                        {formik.errors.user_email && formik.touched.user_email &&
+                            <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.user_email}</div>}
+                    </div>
+
+                    <input{...formik.getFieldProps('user_email')}
+                          name="user_email" placeholder={'Your email'} className={s.input}/>
+
+                    <div className={s.formikErr}>
+                        {formik.errors.message && formik.touched.message &&
+                            <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.message}</div>}
+                    </div>
+
+
+                    <textarea{...formik.getFieldProps('message')}
+                             name="message" placeholder={''} className={s.textArea}/>
+
+                    <button type={'submit'} value={'Send'}
+                                  className={s.submitButton}>Send it to me</button>
+
+                </form>
             </div>
         </div>
     );

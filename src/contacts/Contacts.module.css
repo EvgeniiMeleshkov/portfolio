@@ -12,28 +12,61 @@
 .contactsForm {
     margin-top: 40px;
     width: 70%;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
 }
+ input, textarea {
+    color: snow;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    background-color: #1f1f20;
+    border-radius: 2px;
+    border: #f0dc51 2px solid;
+    font-family: 'Oxanium', cursive;
+    font-size: x-large;
+    font-weight: 500;
+    padding: 20px;
+}
 .input {
     height: 50px;
+
 }
 .submitButton{
     margin-top: 60px;
     font-size: 27px;
     font-weight: bolder;
-    color: mintcream;
+    color: snow;
     background: transparent;
     border: none;
     font-family: 'Oxanium', cursive;
     cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}
+.submitButton:hover {
+    color: #f0dc51;
+}
+.disabled {
+    margin-top: 60px;
+    font-size: 27px;
+    font-weight: bolder;
+    background: transparent;
+    border: none;
+    font-family: 'Oxanium', cursive;
+    cursor: pointer;
+    color: dimgray;
+    width: fit-content;
+    align-self: center;
 }
 .textArea {
     height: 200px;
     resize: none;
+}
+.formikErr {
+    height: 40px;
 }
 
 @media screen and (max-width: 780px) {
