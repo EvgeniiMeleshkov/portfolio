@@ -20,6 +20,8 @@
     height: 30vw;
     width: 70vw;
     background: round;
+    transform: scale(1);
+    transition: 300ms;
 }
 
 
@@ -32,16 +34,17 @@
     bottom: 0;
     left: 0;
     right: 0;
+
 }
 .projectBlock:hover .viewRef {
-    animation: my-animation 1000ms normal forwards;
     text-shadow: #1f1f20 2px 4px 3px;
+    opacity: 100%;
+    transform: scale(1.03);
 }
 .projectBlock:hover {
     filter: none;
     background: round;
     transform: scale(1.03);
-    transition: 300ms;
 }
 .projectBlock:hover::before {
     opacity: 30%;
@@ -54,7 +57,11 @@
     font-size: 50px;
     margin: 0 auto;
     opacity: 0;
+    transform: scale(1);
+    transition: 300ms;
+
 }
+
 /*.viewRef:hover {*/
 /*   */
 /*}*/
