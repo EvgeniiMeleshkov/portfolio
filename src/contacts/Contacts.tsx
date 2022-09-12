@@ -101,7 +101,7 @@ const Contacts = () => {
 
                     <button type={'submit'} value={'Send'}
                                   className={disabled ? s.disabled: s.submitButton}>
-                        {disabled ? 'Sending': 'Send it to me'}
+                        {disabled ? 'Sending...': 'Send it to me'}
                     </button>
 
                 </form>
