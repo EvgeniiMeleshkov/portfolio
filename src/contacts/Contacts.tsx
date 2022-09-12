@@ -5,6 +5,7 @@ import {Title} from '../common/title/Title';
 import {useFormik} from 'formik';
 import emailjs from '@emailjs/browser';
 import {isDisabled} from '@testing-library/user-event/dist/utils';
+import CustomizedSnackbars from '../common/snackbar/SnackBar';
 
 
 type FormikErrorsType = {
@@ -28,6 +29,7 @@ const Contacts = () => {
             .then((result) => {
                 console.log(result.text)
                 setDisabled(false)
+                // alert('Message sent')
             })
             .catch((error) => {
                 alert(error.text);
@@ -68,10 +70,14 @@ const Contacts = () => {
         },
     });
 
+
+
     return (
         <div className={s.contactsMainBlock}>
+
             <div className={`${styleContainer.container} ${s.contactsInnerBlock}`}>
                 <Title title={'Contacts'}/>
+                <CustomizedSnackbars flag={disabled} />
                 <form ref={form} onSubmit={formik.handleSubmit} style={{}} className={s.contactsForm}>
 
                     <div className={s.formikErr}>
