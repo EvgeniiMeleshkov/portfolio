@@ -5,14 +5,18 @@ type PropsType = {
     projectImage: { backgroundImage: string }
     name: string
     description: string
+    href: string
 }
 
-const Project = ({projectImage, description, name}: PropsType) => {
+const Project = ({projectImage, description, name, href}: PropsType) => {
     return (
         <div className={s.mainProjectBlock}>
-            <div style={{...projectImage}} className={s.projectBlock}>
+            <a href={href}>
+                <div style={{...projectImage}} className={s.projectBlock}>
+
                     <label className={s.viewRef}>{name}</label>
-            </div>
+                </div>
+            </a>
             <div className={s.infoBlock}>
                 <h3 className={s.projectName}>{name}</h3>
                 <p className={s.projectDescription}>{description}</p>

@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Footer.module.css'
 import styleContainer from '../common/styles/container/Container.module.css'
-import gitIcon from '../assets/icones/pngaaa.com-1100822.png'
 
 const Footer = () => {
     return (
@@ -31,10 +30,12 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={s.someBlock}>
-                            <a href={'https://www.linkedin.com/in/evgenii-meleshkov-b0b81024a/'}>
-                                <img alt={'my linkedIn'} src={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png'}/>
+                            <a href={'https://www.codewars.com/users/EvgeniiMeleshkov'}>
+                                <img alt={'my code wars'}
+                                     src={'https://assets-global.website-files.com/62462834c60df92621c6b5be/62462c29f3165b55ea6255ea_light-text-logo-vertical.svg'}/>
                             </a>
                         </div>
+
                     </div>
                     <p className={s.footerInfo}>©2022 all rights protected</p>
                 </div>

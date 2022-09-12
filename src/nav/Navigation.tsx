@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom';
 const Navigation = () => {
     const styleForLink = ({ isActive }: { isActive: boolean }) => (isActive ? s.navElementActive : s.navElement)
     return (
-        <div >
+        <div className={s.mainNavDiv} >
             <ul className={s.nav}>
                 <li><NavLink className={styleForLink} to={'/'} >Main</NavLink></li>
                 <li><NavLink className={styleForLink} to={'/skills'} >Skills</NavLink></li>

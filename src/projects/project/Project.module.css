@@ -5,6 +5,10 @@
     background-color: #2b2b2bc7;
     box-shadow: 0 0px 5px #d3d3d330, inset 0 0px 0 hsl(0deg 0% 100% / 30%);
 }
+.mainProjectBlock a {
+    text-decoration: none;
+    color: inherit;
+}
 .projectBlock {
     display: flex;
     justify-content: center;
@@ -29,22 +33,31 @@
     left: 0;
     right: 0;
 }
+.projectBlock:hover .viewRef {
+    animation: my-animation 1000ms normal forwards;
+    text-shadow: #1f1f20 2px 4px 3px;
+}
 .projectBlock:hover {
-    filter: grayscale(0%);
+    filter: none;
+    background: round;
+    transform: scale(1.03);
+    transition: 300ms;
 }
 .projectBlock:hover::before {
-    opacity: 40%;
+    opacity: 30%;
 }
+
 .viewRef{
+    cursor: pointer;
     position: relative;
     z-index: 1;
     font-size: 50px;
     margin: 0 auto;
     opacity: 0;
 }
-.viewRef:hover {
-    animation: my-animation 1000ms normal forwards;
-}
+/*.viewRef:hover {*/
+/*   */
+/*}*/
 
 
 @keyframes my-animation {

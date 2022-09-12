@@ -11,7 +11,7 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title title={'My Projects'}/>
                 <div className={s.projects}>
-                    {projects.map(el => <Project key={el.name} name={el.name} description={el.description} projectImage={el.background}/>)}
+                    {projects.map(el => <Project key={el.name} href={el.href} name={el.name} description={el.description} projectImage={el.background}/>)}
                 </div>
             </div>
         </div>

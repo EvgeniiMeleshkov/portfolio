@@ -7,6 +7,7 @@ export const projects = [
     {
         name: 'Social network',
         description: 'Big complex app. Building a real social network...',
+        href: 'https://evgeniimeleshkov.github.io/Samuray_Way/',
         background: {
             backgroundImage: `url(${socScreen})`,
             backgroundSize: 'cover'
@@ -15,6 +16,7 @@ export const projects = [
     {
         name: 'Productivity App',
         description: 'Production developed complex App. Complex todo-list.',
+        href: 'https://evgeniimeleshkov.github.io/my_todo/',
         background: {
             backgroundImage: `url(${todo})`,
             backgroundSize: 'cover'
@@ -23,6 +25,7 @@ export const projects = [
     {
         name: 'Components',
         description: 'Self-created components library for further usage.',
+        href: 'https://evgeniimeleshkov.github.io/ts_tasks_from_i/',
         background: {
             backgroundImage: `url(${components})`,
             backgroundSize: 'cover'
@@ -31,6 +34,7 @@ export const projects = [
     {
         name: 'Counter',
         description: 'Simple counter with settings. Looks good..)',
+        href: 'https://evgeniimeleshkov.github.io/counter_ts/',
         background: {
             backgroundImage: `url(${counter})`,
             backgroundSize: 'cover'

@@ -1,7 +1,10 @@
+.mainNavDiv {
+    width: 100vw;
+}
 .nav {
     display: flex;
-    min-width: 400px;
-    justify-content: space-between;
+    min-width: 300px;
+    justify-content: space-evenly;
     margin: 10px;
 }
 li {
@@ -17,19 +20,4 @@ li {
     font-weight: bolder;
     color: mintcream;
     text-decoration: none;
-}
-@media screen and (max-width: 450px){
-    .nav {
-        width: 300px;
-        min-width: auto;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
-}
-@media screen and (max-width: 350px){
-    .nav {
-        width: 290px;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
 }

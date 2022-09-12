@@ -29,6 +29,7 @@
     flex-wrap: wrap;
 }
 .someBlock {
+    cursor: pointer;
     width: 40px;
     display: flex;
     justify-content: center;

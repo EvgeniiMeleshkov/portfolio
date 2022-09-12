@@ -22,12 +22,12 @@ const Main = () => {
                 setI(0)
                 setJ(++j)
                 console.log(j)
-                if (text.length === j ) {
+                if (text.length === j) {
                     setJ(0)
                     setI(1)
                 }
             }
-        }, Math.random()*300);
+        }, Math.random() * 300);
         return () => {
             clearInterval(index)
         }
@@ -35,24 +35,44 @@ const Main = () => {
     return (
         <div className={s.mainBlock}>
             <div className={`${sContainer.container} ${s.mainContainer}`}>
-                <div className={s.photoFrame}>
-                    <img alt="MyPhoto" src={myPhoto} className={s.photo}/>
-                </div>
-                <div className={s.greetings}>
-                    <p>Hi There</p>
-                    <h1>I`m Evgenii Meleshkov</h1>
-                    <div className={s.title}>
-                        <label>{val}</label>
+                <div className={s.photoAndHi}>
+                    <div className={s.photoFrame}>
+                        <img alt="MyPhoto" src={myPhoto} className={s.photo}/>
                     </div>
-                    <h2>
-                        About me...
-                    </h2>
-                    <p>a;odpoaj sdpja poja podjvnpijr pihrt
-                        vpiha piha cpiahr vpihjs parihv aspih
-                        vars vapiha vpihar pivh asrpivh apishrv </p>
+                    <div className={s.greetings}>
+                        <p>Hi There</p>
+                        <h1>I`m Evgenii Meleshkov</h1>
+                        <div className={s.title}>
+                            <label>{val}</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
+                    <div className={s.generalInfo}>
+                        <div>
+                            <h2><hr/>About me...</h2>
+                            <p>
+                                I'm a developer with experience building SPAs using JS/TS/React/Redux/TypeScript/HTML&CSS/SCSS and so on.
+                                I like to develop applications that bring real value to the business & users.
+                                Now I am improving my skills in this area and expanding my knowledge with new technologies.
+                                I spend my free time reading educational literature,
+                                as well as watch some technical videos about development & computer science.
+                                Responsible, executive, punctual, quickly find a common language with people.
+                            </p>
+                        </div>
+                        <div style={{marginBottom: '-100px'}}>
+                            <hr/>
+                            <ul className={s.persInfo}>
+                                <li><p><span>Birthday:</span>20.07.1992</p></li>
+                                <li><p><span>Age:</span>30</p></li>
+                                <li><p><span>Location:</span>Moscow</p></li>
+                                <li><p><span>Email:</span>evgen.mj.tm@gmail.com</p></li>
+                                <li><p><span>Phone:</span>+79851903747</p></li>
+                                <li><p><span>Study:</span>It-Incubator</p></li>
+                                <li><p><span>Relative exp:</span>About one year</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
 };
