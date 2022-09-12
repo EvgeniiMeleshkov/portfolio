@@ -20,15 +20,11 @@ export default function CustomizedSnackbars(props: any) {
 
     return (
         <Stack spacing={2} sx={{ width: '100%' }}>
-            {/*<Button variant="outlined" onClick={handleClick}>*/}
-            {/*    Open success snackbar*/}
-            {/*</Button>*/}
             <Snackbar open={props.flag} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                     I will answer as soon as I can
                 </Alert>
             </Snackbar>
-            {/*<Alert severity="success">I will answer as soon as I can</Alert>*/}
         </Stack>
     );
 }

@@ -85,7 +85,7 @@ const Contacts = () => {
                             <div style={{color: 'red', fontWeight: 'bold'}}>{formik.errors.user_name}</div>}
                     </div>
 
-                    <input {...formik.getFieldProps('user_name')}
+                    <input  {...formik.getFieldProps('user_name')}
                            name="user_name" placeholder={'Your name'} className={s.input}/>
 
                     <div className={s.formikErr}>

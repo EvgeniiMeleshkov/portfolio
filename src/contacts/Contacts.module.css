@@ -30,6 +30,9 @@
     font-weight: 500;
     padding: 20px;
 }
+ textarea {
+     font-family: 'Oxanium', cursive;
+ }
 .input {
     height: 50px;
 
