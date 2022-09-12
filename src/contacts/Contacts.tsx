@@ -4,6 +4,7 @@ import styleContainer from '../common/styles/container/Container.module.css'
 import {Title} from '../common/title/Title';
 import {useFormik} from 'formik';
 import emailjs from '@emailjs/browser';
+import {isDisabled} from '@testing-library/user-event/dist/utils';
 
 
 type FormikErrorsType = {
@@ -20,13 +21,17 @@ type FormDataType = {
 const Contacts = () => {
 
     const form = useRef<any>();
+    const [disabled, setDisabled] = useState(false)
     const sendEmail = (e: FormDataType) => {
+        setDisabled(true)
         emailjs.sendForm('service_5zouc17', 'template_0jjfus1', form.current, 'Fcy7fgHITPL0M0wnk')
             .then((result) => {
-
-            }, (error) => {
+                console.log(result.text)
+                setDisabled(false)
+            })
+            .catch((error) => {
                 alert(error.text);
-            });
+            })
     };
 
 
@@ -56,8 +61,9 @@ const Contacts = () => {
             return errors
         },
         onSubmit: values => {
-            values.message && values.user_email && values.user_name &&
-            sendEmail({user_name: values.user_name.trim(), user_email: values.user_email.trim(), message: values.message})
+            sendEmail({user_name: values.user_name.trim(),
+                user_email: values.user_email.trim(),
+                message: values.message})
             formik.resetForm()
         },
     });
@@ -94,7 +100,9 @@ const Contacts = () => {
                              name="message" placeholder={''} className={s.textArea}/>
 
                     <button type={'submit'} value={'Send'}
-                                  className={s.submitButton}>Send it to me</button>
+                                  className={disabled ? s.disabled: s.submitButton}>
+                        {disabled ? 'Sending': 'Send it to me'}
+                    </button>
 
                 </form>
             </div>
