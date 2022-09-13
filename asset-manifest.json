@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a6f62cf3.css",
-    "main.js": "/portfolio/static/js/main.4fcb8003.js",
+    "main.js": "/portfolio/static/js/main.9ee27d46.js",
     "static/js/787.e8871c4f.chunk.js": "/portfolio/static/js/787.e8871c4f.chunk.js",
     "static/media/samuraiSoc.png": "/portfolio/static/media/samuraiSoc.2bb4b6658dcb6e24d3f5.png",
     "static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg": "/portfolio/static/media/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.5d1be4c3bbe54f8cda7e.jpeg",
     "static/media/todo.png": "/portfolio/static/media/todo.48886d751a5898e92d49.png",
     "static/media/components.png": "/portfolio/static/media/components.275d6a920a4c33681d8b.png",
+    "static/media/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.png": "/portfolio/static/media/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.fb950c5b53f1311d77b0.png",
     "static/media/counter1.png": "/portfolio/static/media/counter1.6d096ceef0fb2e74c2f3.png",
     "static/media/pnghut_postgresql-relational-database-management-system-elefant.png": "/portfolio/static/media/pnghut_postgresql-relational-database-management-system-elefant.2b0854318500416b4a92.png",
     "static/media/pnghut_responsive-web-design-sass-cascading-style-sheets-sheet-language-magenta-framework.png": "/portfolio/static/media/pnghut_responsive-web-design-sass-cascading-style-sheets-sheet-language-magenta-framework.58e61bc991e55a95072b.png",
@@ -16,11 +17,11 @@
     "static/media/HTML.png": "/portfolio/static/media/HTML.33e5583f9042df9e0bf2.png",
     "index.html": "/portfolio/index.html",
     "main.a6f62cf3.css.map": "/portfolio/static/css/main.a6f62cf3.css.map",
-    "main.4fcb8003.js.map": "/portfolio/static/js/main.4fcb8003.js.map",
+    "main.9ee27d46.js.map": "/portfolio/static/js/main.9ee27d46.js.map",
     "787.e8871c4f.chunk.js.map": "/portfolio/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6f62cf3.css",
-    "static/js/main.4fcb8003.js"
+    "static/js/main.9ee27d46.js"
   ]
 }
