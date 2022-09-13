@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Footer.module.css'
 import styleContainer from '../common/styles/container/Container.module.css'
+import linkedin from '../assets/icones/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.png'
 
 const Footer = () => {
     return (
@@ -24,6 +25,12 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={s.someBlock}>
+                            <a href={'https://www.linkedin.com/in/evgenii-meleshkov-b0b81024a/'}>
+                                <img alt={'my linked in'}
+                                     src={linkedin} />
+                            </a>
+                        </div>
+                        <div className={s.someBlock}>
                             <a href={'https://vk.com/id19200667'}>
                                 <img alt={'my vk'}
                                      src={'https://upload.wikimedia.org/wikipedia/commons/b/bc/VK_logo.svg'}/>
@@ -35,7 +42,6 @@ const Footer = () => {
                                      src={'https://assets-global.website-files.com/62462834c60df92621c6b5be/62462c29f3165b55ea6255ea_light-text-logo-vertical.svg'}/>
                             </a>
                         </div>
-
                     </div>
                     <p className={s.footerInfo}>©2022 all rights protected</p>
                 </div>
