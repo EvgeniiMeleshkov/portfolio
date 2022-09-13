@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {HashRouter} from 'react-router-dom';
 import './fonts/Oxanium/Oxanium-VariableFont_wght.ttf'
-document.title = 'Evgenii Meleshkov'
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
