@@ -68,7 +68,7 @@ const Main = () => {
                                 <li><p><span>Email:</span>evgen.mj.tm@gmail.com</p></li>
                                 <li><p><span>Phone:</span>+79851903747</p></li>
                                 <li><p><span>Study:</span>It-Incubator</p></li>
-                                <li><p><span>Relative exp:</span>About one year</p></li>
+                                <li><p><span>Relative exp:</span>More then year</p></li>
                             </ul>
                         </div>
                     </div>
