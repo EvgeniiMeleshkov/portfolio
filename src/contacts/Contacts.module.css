@@ -25,14 +25,12 @@
     background-color: #1f1f20;
     border-radius: 2px;
     border: #f0dc51 2px solid;
-    font-family: 'Oxanium', cursive;
+    font-family: inherit;
     font-size: x-large;
     font-weight: 500;
     padding: 20px;
 }
- textarea {
-     font-family: 'Oxanium', cursive;
- }
+
 .input {
     height: 50px;
 
