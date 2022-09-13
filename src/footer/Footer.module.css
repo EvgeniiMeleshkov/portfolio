@@ -20,6 +20,7 @@
 
 }
 .someBlocks {
+    margin: 20px;
     z-index: 1;
     width: 80%;
     display: flex;
