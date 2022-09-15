@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Footer.module.css'
 import styleContainer from '../common/styles/container/Container.module.css'
 import linkedin from '../assets/icones/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.png'
-import github from '../assets/icones/pnghut_github-logo-vector-graphics-github-inc.png'
+import github from '../assets/icones/pnghut_github-distributed-version-control-silhouette-github.png'
 
 const Footer = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className={s.someBlocks}>
                         <div className={s.someBlock}>
                             <a href={'https://github.com/EvgeniiMeleshkov'}>
-                                <img style={{color: 'snow'}} alt={'my github'}
+                                <img alt={'my github'}
                                      src={github}/>
                             </a>
                         </div>
