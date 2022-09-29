@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './Main.module.css'
 import sContainer from '../common/styles/container/Container.module.css'
-import myPhoto from '../assets/259FB511-57C1-4200-993F-A67B9457C595_1_201_a.jpeg'
+import myPhoto from '../assets/IMG_2503.jpg'
 
 const Main = () => {
     const text = ['Frontend developer', 'React developer', 'JavaScript developer', 'ex iOS developer']
@@ -64,9 +64,9 @@ const Main = () => {
                             <ul className={s.persInfo}>
                                 <li><p><span>Birthday:</span>20.07.1992</p></li>
                                 <li><p><span>Age:</span>30</p></li>
-                                <li><p><span>Location:</span>Moscow</p></li>
+                                <li><p><span>Location:</span>Tashkent</p></li>
                                 <li><p><span>Email:</span>evgen.mj.tm@gmail.com</p></li>
-                                <li><p><span>Phone:</span>+79851903747</p></li>
+                                <li><p><span>Phone:</span>+998-93-067-70-06</p></li>
                                 <li><p><span>Study:</span>It-Incubator</p></li>
                                 <li><p><span>Relative exp:</span>More then year</p></li>
                             </ul>
