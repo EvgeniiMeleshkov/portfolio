@@ -2,6 +2,7 @@ import socScreen from '../../assets/projectsScreens/samuraiSoc.png'
 import todo from '../../assets/projectsScreens/todo.png'
 import components from '../../assets/projectsScreens/components.png'
 import counter from '../../assets/projectsScreens/counter1.png'
+import dragon from '../../assets/projectsScreens/Dragon-quiz.png'
 
 export const projects = [
     {
@@ -38,6 +39,18 @@ export const projects = [
         background: {
             backgroundImage: `url(${counter})`,
             backgroundSize: 'cover'
+        }
+    },
+    {
+        name: 'Dragon-quiz',
+        description: 'Big and complex app for education. It`s in progress now.',
+        href: 'https://evgeniimeleshkov.github.io/my-dragon-quiz/',
+        background: {
+            backgroundImage: `url(${dragon})`,
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
         }
     },
 
