@@ -3,6 +3,7 @@ import todo from '../../assets/projectsScreens/todo.png'
 import components from '../../assets/projectsScreens/components.png'
 import counter from '../../assets/projectsScreens/counter1.png'
 import dragon from '../../assets/projectsScreens/Dragon-quiz.png'
+import searchAndNav from '../../assets/projectsScreens/search&nav.png'
 
 export const projects = [
     {
@@ -53,5 +54,16 @@ export const projects = [
             borderRadius: '5px'
         }
     },
-
+    {
+        name: 'Search & Nav NoteBook',
+        description: 'Its was a test task from one of the companies',
+        href: 'https://evgeniimeleshkov.github.io/tasks-test-app',
+        background: {
+            backgroundImage: `url(${searchAndNav})`,
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
+        }
+    },
 ]
