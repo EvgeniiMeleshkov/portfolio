@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.63c78e3d.css",
-    "main.js": "/portfolio/static/js/main.210c67df.js",
+    "main.js": "/portfolio/static/js/main.b1078b5c.js",
     "static/js/787.e8871c4f.chunk.js": "/portfolio/static/js/787.e8871c4f.chunk.js",
     "static/media/samuraiSoc.png": "/portfolio/static/media/samuraiSoc.2bb4b6658dcb6e24d3f5.png",
     "static/media/IMG_2503.jpg": "/portfolio/static/media/IMG_2503.7b7d2326aa0a36450cf4.jpg",
     "static/media/todo.png": "/portfolio/static/media/todo.48886d751a5898e92d49.png",
     "static/media/components.png": "/portfolio/static/media/components.275d6a920a4c33681d8b.png",
+    "static/media/search&nav.png": "/portfolio/static/media/search&nav.c9ce1e743bb1da2925fd.png",
     "static/media/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.png": "/portfolio/static/media/pnghut_linked-in-icon-linkedin-media-turquoise-electric-blue.fb950c5b53f1311d77b0.png",
     "static/media/counter1.png": "/portfolio/static/media/counter1.6d096ceef0fb2e74c2f3.png",
     "static/media/Dragon-quiz.png": "/portfolio/static/media/Dragon-quiz.358d57a426670b6aa706.png",
@@ -18,11 +19,11 @@
     "static/media/HTML.png": "/portfolio/static/media/HTML.33e5583f9042df9e0bf2.png",
     "index.html": "/portfolio/index.html",
     "main.63c78e3d.css.map": "/portfolio/static/css/main.63c78e3d.css.map",
-    "main.210c67df.js.map": "/portfolio/static/js/main.210c67df.js.map",
+    "main.b1078b5c.js.map": "/portfolio/static/js/main.b1078b5c.js.map",
     "787.e8871c4f.chunk.js.map": "/portfolio/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63c78e3d.css",
-    "static/js/main.210c67df.js"
+    "static/js/main.b1078b5c.js"
   ]
 }
