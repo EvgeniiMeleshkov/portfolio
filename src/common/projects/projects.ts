@@ -2,7 +2,7 @@ import socScreen from '../../assets/projectsScreens/samuraiSoc.png'
 import todo from '../../assets/projectsScreens/todo.png'
 import components from '../../assets/projectsScreens/components.png'
 import counter from '../../assets/projectsScreens/counter1.png'
-import dragon from '../../assets/projectsScreens/Dragon-quiz.png'
+import dragon from '../../assets/projectsScreens/dragon.png'
 import searchAndNav from '../../assets/projectsScreens/search&nav.png'
 
 export const projects = [
