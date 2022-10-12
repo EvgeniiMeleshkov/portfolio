@@ -4,6 +4,7 @@ import components from '../../assets/projectsScreens/components.png'
 import counter from '../../assets/projectsScreens/counter1.png'
 import dragon from '../../assets/projectsScreens/dragon.png'
 import searchAndNav from '../../assets/projectsScreens/search&nav.png'
+import turing from '../../assets/projectsScreens/turing.png'
 
 export const projects = [
     {
@@ -56,10 +57,22 @@ export const projects = [
     },
     {
         name: 'Search & Nav NoteBook',
-        description: 'Its was a test task from one of the companies',
+        description: 'It`s was a test task from one of the companies',
         href: 'https://evgeniimeleshkov.github.io/tasks-test-app',
         background: {
             backgroundImage: `url(${searchAndNav})`,
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
+        }
+    },
+    {
+        name: 'Turing fake machine',
+        description: 'This is the fake behavior of the Turing machine (only UI & animations)',
+        href: 'https://evgeniimeleshkov.github.io/turing-fake-ui/',
+        background: {
+            backgroundImage: `url(${turing})`,
             backgroundSize: 'cover',
             width: '95%',
             marginTop: '5px',
