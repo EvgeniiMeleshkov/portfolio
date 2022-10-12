@@ -13,7 +13,10 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/Samuray_Way/',
         background: {
             backgroundImage: `url(${socScreen})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
         }
     },
     {
@@ -22,7 +25,10 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/my_todo/',
         background: {
             backgroundImage: `url(${todo})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
         }
     },
     {
@@ -31,7 +37,10 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/ts_tasks_from_i/',
         background: {
             backgroundImage: `url(${components})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
         }
     },
     {
@@ -40,7 +49,10 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/counter_ts/',
         background: {
             backgroundImage: `url(${counter})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
         }
     },
     {
