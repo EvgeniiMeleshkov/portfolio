@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import s from './Main.module.css'
 import sContainer from '../common/styles/container/Container.module.css'
-import myPhoto from '../assets/IMG_2503.jpg'
+import myPhoto from '../assets/me.jpeg'
 import {NavLink} from 'react-router-dom';
 
 const Main = () => {
