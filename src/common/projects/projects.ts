@@ -5,6 +5,7 @@ import counter from '../../assets/projectsScreens/counter1.png'
 import dragon from '../../assets/projectsScreens/dragon.png'
 import searchAndNav from '../../assets/projectsScreens/search&nav.png'
 import turing from '../../assets/projectsScreens/turing.png'
+import sPeterburg from '../../assets/projectsScreens/s-Peterburg.png'
 
 export const projects = [
     {
@@ -85,6 +86,18 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/turing-fake-ui/',
         background: {
             backgroundImage: `url(${turing})`,
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
+        }
+    },
+    {
+        name: 'SCSS training project',
+        description: 'Mobile-First figma-layout driven development using SCSS & adaptive',
+        href: 'https://evgeniimeleshkov.github.io/peterburg-travelling/',
+        background: {
+            backgroundImage: `url(${sPeterburg})`,
             backgroundSize: 'cover',
             width: '95%',
             marginTop: '5px',
