@@ -6,6 +6,7 @@ import dragon from '../../assets/projectsScreens/dragon.png'
 import searchAndNav from '../../assets/projectsScreens/search&nav.png'
 import turing from '../../assets/projectsScreens/turing.png'
 import sPeterburg from '../../assets/projectsScreens/s-Peterburg.png'
+import aB from '../../assets/projectsScreens/a-b.png'
 
 export const projects = [
     {
@@ -98,6 +99,18 @@ export const projects = [
         href: 'https://evgeniimeleshkov.github.io/peterburg-travelling/',
         background: {
             backgroundImage: `url(${sPeterburg})`,
+            backgroundSize: 'cover',
+            width: '95%',
+            marginTop: '5px',
+            borderRadius: '5px'
+        }
+    },
+    {
+        name: 'Date obj manipulation training',
+        description: 'Manipulations with Date UTC object & parsing it into user location zone',
+        href: 'https://evgeniimeleshkov.github.io/a-b/',
+        background: {
+            backgroundImage: `url(${aB})`,
             backgroundSize: 'cover',
             width: '95%',
             marginTop: '5px',
