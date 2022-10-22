@@ -108,7 +108,7 @@ export const projects = [
     {
         name: 'Date obj manipulation training',
         description: 'Manipulations with Date UTC object & parsing it into user location zone',
-        href: 'https://evgeniimeleshkov.github.io/a-b/',
+        href: 'https://evgeniimeleshkov.github.io/tickets-to-trip',
         background: {
             backgroundImage: `url(${aB})`,
             backgroundSize: 'cover',
