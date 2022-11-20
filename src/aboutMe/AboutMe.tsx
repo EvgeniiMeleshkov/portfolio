@@ -27,11 +27,11 @@ const AboutMe = () => {
                         <ul className={s.persInfo}>
                             <li><p><span>Birthday:</span>20.07.1992</p></li>
                             <li><p><span>Age:</span>30</p></li>
-                            <li><p><span>Location:</span>Tashkent</p></li>
+                            <li><p><span>Location:</span>Buenos Aires</p></li>
                             <li><p><span>Email:</span>evgen.mj.tm@gmail.com</p></li>
-                            <li><p><span>Phone:</span>+998-93-067-70-06</p></li>
+                            <li><p><span>Phone:</span>+54-9-11-5014-6908</p></li>
                             <li><p><span>Study:</span>It-Incubator</p></li>
-                            <li><p><span>Relative exp:</span>More then year</p></li>
+                            <li><p><span>Relative exp:</span>More then 1.5 year</p></li>
                         </ul>
                     </div>
                 </div>
