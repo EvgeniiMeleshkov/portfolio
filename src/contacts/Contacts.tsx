@@ -4,7 +4,6 @@ import styleContainer from '../common/styles/container/Container.module.css'
 import {Title} from '../common/title/Title';
 import {useFormik} from 'formik';
 import emailjs from '@emailjs/browser';
-import {isDisabled} from '@testing-library/user-event/dist/utils';
 import CustomizedSnackbars from '../common/snackbar/SnackBar';
 
 
@@ -63,9 +62,9 @@ const Contacts = () => {
             return errors
         },
         onSubmit: values => {
-            sendEmail({user_name: values.user_name.trim(),
-                user_email: values.user_email.trim(),
-                message: values.message})
+            // sendEmail({user_name: values.user_name.trim(),
+            //     user_email: values.user_email.trim(),
+            //     message: values.message})
             formik.resetForm()
         },
     });
